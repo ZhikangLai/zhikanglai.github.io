@@ -1,0 +1,82 @@
+.wy-nav-content {
+    max-width: 100% !important;  
+    padding: 2rem 5% !important;
+    margin: 0 auto;
+}
+
+.wy-nav-content-wrap {
+    margin-left: 300px !important;  
+    background: white;
+
+    transition: margin-left 0.3s ease;
+}
+
+.wy-nav-side {
+    box-shadow: none;
+    border-right: 1px solid #e1e4e5;
+}
+
+@media (max-width: 768px) {
+    .wy-nav-content {
+        overflow-x: auto !important;  
+    }
+    
+    .wy-nav-content-wrap {
+        margin-left: 0 !important;
+    }
+}
+
+
+
+body {
+  font-size: 16px; /* 默认14px */
+}
+/* 调整标题 */
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+/* 代码块字体 */
+.highlight code { font-size: 13px; }
+
+
+/* 基础表格样式 */
+table {
+    border: 1px solid #e1e4e5;  /* 浅灰色外边框 */
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);  /* 轻微阴影增强层次[3](@ref) */
+}
+
+/* 表头样式 */
+th {
+    background-color: #f8f9fa;  /* 浅灰色背景 */
+    border: 1px solid #e1e4e5;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #2c3e50;  /* 深灰色文字 */
+}
+
+/* 单元格样式 */
+td {
+    border: 1px solid #e1e4e5;
+    padding: 12px;
+    color: #4a4a4a;  /* 中性灰文字 */
+}
+
+/* 斑马线效果 */
+tr:nth-child(even) {
+    background-color: #fcfcfc;  /* 更浅的灰色背景 */
+}
+
+footer p:last-child {
+    visibility: hidden;          
+    position: relative;
+}
+footer p:last-child::before {
+    content: "© 2025 Zhikang Lai";
+    visibility: visible;
+    position: absolute; left: 0; right: 0;
+    text-align: center;
+}
+
